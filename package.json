@@ -1,0 +1,21 @@
+{
+  "name": "scale-of-the-solar-system",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A true-scale, single-page voyage through the solar system.",
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check server.mjs && node --check dist/app.js && node --check dist/data.js && node --check dist/motion.js",
+    "test": "node --test test/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dougwhite/scale-of-the-solar-system.git"
+  },
+  "homepage": "https://dougwhite.github.io/scale-of-the-solar-system/"
+}
