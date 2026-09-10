@@ -34,3 +34,5 @@ Pluto's map includes black unmapped areas; the app projects and shades it. Gaspr
 - [NASA Arrokoth facts](https://science.nasa.gov/solar-system/kuiper-belt/arrokoth-2014-mu69/facts/)
 
 The scientific sources are credited references, not a claim of their endorsement. The model's approximations are described in the app and in [the model notes](docs/model.md).
+
+Voyager 1 marker and mission facts: [NASA live distance tracker](https://science.nasa.gov/specials/apps/voyager-vital-signs/table/) (distance snapshot from 11 September 2026), [Voyager 1 mission history](https://science.nasa.gov/mission/voyager/voyager-1/), and [spacecraft dimensions](https://science.nasa.gov/mission/voyager/spacecraft/). The marker uses no additional third-party image.
