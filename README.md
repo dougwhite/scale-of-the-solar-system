@@ -80,6 +80,6 @@ Checks cover scale invariants, travel timing and continuity, flyby visibility, s
 
 ## Credits
 
-Conceived and directed by **Doug White**. A scientific imagination experiment developed with **GPT-6 Astra**.
+A scientific imagination experiment developed with **GPT-6 Astra**.
 
 Planet textures: **Solar System Scope**, CC BY 4.0. Mission imagery: **NASA/JPL/JHUAPL/SwRI**, with the individual credits preserved in the app and [third-party notices](THIRD_PARTY_NOTICES.md). Scientific references include NASA Science, JPL and the linked Planet Nine research. This is an independent project, not an endorsed NASA resource.
