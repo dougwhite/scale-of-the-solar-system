@@ -1,4 +1,4 @@
-import {AU,BASE,objects,kmAt,pixelsPerKm,screenY,nearestIndex,clampCamera} from './data.js';
+import {AU,BASE,objects,moon,kmAt,pixelsPerKm,screenY,nearestIndex,clampCamera} from './data.js';
 import {flingVelocity,momentumStep,starPosition,createTravelPlan,travelPosition} from './motion.js';
 const $=id=>document.getElementById(id), canvas=$('space'), ctx=canvas.getContext('2d',{alpha:false});
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
@@ -26,7 +26,7 @@ function globe(img,o){
  }
  oc.putImageData(pixels,0,0);return out;
 }
-for(const o of objects.filter(o=>o.diameter&&!o.hypothetical)){const img=new Image();img.onload=()=>{textures.set(o.id,img);globes.set(o.id,globe(img,o));dirty=true};img.onerror=()=>{$('credits').textContent+=' A texture could not load; reload to retry.'};img.src=`./assets/${o.id}.jpg`;}
+for(const o of [...objects,moon].filter(o=>o.diameter&&!o.hypothetical)){const img=new Image();img.onload=()=>{textures.set(o.id,img);globes.set(o.id,globe(img,o));dirty=true};img.onerror=()=>{$('credits').textContent+=' A texture could not load; reload to retry.'};img.src=`./assets/${o.id}.jpg`;}
 const specimens={
  asteroids:{name:'951 Gaspra',length:19,file:'gaspra.jpg',description:'A small main-belt asteroid, about 19 × 12 × 11 km. This Galileo image is a magnified example, not an average of all asteroids.',credit:'NASA/JPL',source:'https://www.jpl.nasa.gov/images/pia00118-gaspra-highest-resolution-mosaic/'},
  kuiper:{name:'Arrokoth',length:35,file:'arrokoth.png',description:'A small Kuiper belt object, about 35 × 20 × 10 km, formed from two joined lobes. This New Horizons image is a magnified example, not an average of all Kuiper belt objects.',credit:'NASA/Johns Hopkins APL/SwRI',source:'https://science.nasa.gov/resource/kuiper-belt-object-arrokoth-2014-mu69/'}
@@ -51,7 +51,7 @@ function drawPlanet(o,y){
  const map=globes.get(o.id);
  if(map)ctx.drawImage(map,x-r,y-r,diameter,diameter);else{ctx.fillStyle=o.color;ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fill();}
  if(o.id==='saturn')drawRings(x,y,r,true);
- if(diameter<4){ctx.strokeStyle=o.color+'66';ctx.lineWidth=.6;ctx.beginPath();ctx.arc(x,y,6,0,Math.PI*2);ctx.stroke();}
+ if(diameter<4&&!o.visualOnly){ctx.strokeStyle=o.color+'66';ctx.lineWidth=.6;ctx.beginPath();ctx.arc(x,y,6,0,Math.PI*2);ctx.stroke();}
  ctx.restore();
 }
 function drawRings(x,y,r,front){ctx.save();ctx.translate(x,y);ctx.rotate(-.36);ctx.scale(1,.32);ctx.lineWidth=r*.19;for(let i=0;i<5;i++){ctx.strokeStyle=['#af9d7470','#d4c29980','#a3947770','#8b806448','#c5b38e70'][i];ctx.beginPath();ctx.arc(0,0,r*(1.25+i*.2),front?0:Math.PI,front?Math.PI:Math.PI*2);ctx.stroke();}ctx.restore();}
@@ -70,6 +70,7 @@ function draw(){
    ctx.fillStyle=o.color;ctx.font='11px Arial';ctx.textAlign='center';ctx.fillText(label,w/2,edgeY-16);
   }
  }
+ drawPlanet(moon,screenY(kmAt(moon),camera,zoom,h));
  for(const o of objects){const y=screenY(kmAt(o),camera,zoom,h);if(o.diameter)drawPlanet(o,y);else drawSpecimen(o,y);}
 
 }

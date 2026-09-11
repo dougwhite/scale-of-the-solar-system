@@ -22,3 +22,6 @@ export const pixelsPerKm = zoom => BASE * zoom;
 export const screenY = (km,camera,zoom,height) => height/2 + (km-camera)*pixelsPerKm(zoom);
 export const nearestIndex = camera => objects.reduce((best,o,i) => Math.abs(kmAt(o)-camera)<Math.abs(kmAt(objects[best])-camera)?i:best,0);
 export const clampCamera = km => Math.max(-1392700,Math.min(805*AU,km));
+
+// Visual-only Moon: no navigation, information, snapping or travel-time stop.
+export const moon = {id:'moon',au:1+384400/AU,diameter:3474.8,color:'#c7c9cf',visualOnly:true};

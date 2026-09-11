@@ -43,3 +43,7 @@ Only the `dist` folder is exposed by the server; source scripts and other local 
 Voyager 1 is a one-pixel location marker with a small locator ring at 171.722 AU from the Sun, between Arrokoth and the illustrative Planet X. This is a fixed snapshot from NASA’s Voyager tracker on 11 September 2026, not a live position or an average orbit. Only radial distance is represented; the probe does not lie on the same line as the planets. Its popup reports the 3.7 m high-gain antenna diameter, not an overall spacecraft diameter, and distinguishes the visible marker from physical scale. Navigation and travel use the same distance scale and timing as the other destinations.
 
 Sources: [NASA distance tracker](https://science.nasa.gov/specials/apps/voyager-vital-signs/table/), [mission history](https://science.nasa.gov/mission/voyager/voyager-1/), [spacecraft dimensions](https://science.nasa.gov/mission/voyager/spacecraft/).
+
+## Visual-only Moon
+
+The Moon is drawn at its true relative size (mean diameter 3,474.8 km), 384,400 km beyond Earth’s centre in the Mars direction. This is an illustrative alignment, not a live orbital position. It is intentionally absent from the destination list, information popups, snapping and flyby timing. No locator ring enlarges its appearance when zoomed out. Navigation and the fixed side rail match the main version. Texture: Solar System Scope, CC BY 4.0; see the third-party notices.

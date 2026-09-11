@@ -36,3 +36,5 @@ Pluto's map includes black unmapped areas; the app projects and shades it. Gaspr
 The scientific sources are credited references, not a claim of their endorsement. The model's approximations are described in the app and in [the model notes](docs/model.md).
 
 Voyager 1 marker and mission facts: [NASA live distance tracker](https://science.nasa.gov/specials/apps/voyager-vital-signs/table/) (distance snapshot from 11 September 2026), [Voyager 1 mission history](https://science.nasa.gov/mission/voyager/voyager-1/), and [spacecraft dimensions](https://science.nasa.gov/mission/voyager/spacecraft/). The marker uses no additional third-party image.
+
+Moon texture: `dist/assets/moon.jpg` is Solar System Scope’s `2k_moon.jpg`, from https://www.solarsystemscope.com/textures/, CC BY 4.0, projected and shaded like the other maps. Mean diameter 3,474.8 km and mean Earth-centred distance 384,400 km; see [NASA Moon facts](https://science.nasa.gov/moon/facts/). The outward alignment is illustrative.
