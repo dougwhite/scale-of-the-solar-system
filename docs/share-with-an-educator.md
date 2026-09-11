@@ -67,6 +67,20 @@ Read **Mostly, it's space** in the **i** popup, individually or as a group.
 
 **Exit prompt:** What changed in your understanding of the solar system's scale? Support the answer with one observation from the app, and name one thing the app cannot show accurately.
 
+## Optional discovery activity: find the Moon
+
+Before exploring, ask learners to sketch Earth and the Moon with their predicted relative sizes and spacing. How much empty space should separate them?
+
+Start at Earth and scroll slowly downward, toward Mars. There is a small, unlabelled Moon to discover: it has no navigation marker, information popup or automatic stopping point. Invite learners to look carefully rather than jump to the next planet.
+
+Once they find it, challenge learners to zoom out and adjust their position until **Earth and the Moon are both fully visible in the same screen**. Zoom changes sizes and distances together; avoid the home button, which resets the zoom. Take a screenshot or sketch the view and compare it with the original prediction.
+
+**Discussion:** How small did Earth need to become to fit its nearest neighbour into the picture? What surprised you about the gap? Why do familiar Earth–Moon illustrations often bring them much closer together?
+
+For a numerical comparison, the Moon is about 0.27 Earth diameters across, and its average centre-to-centre distance from Earth is 384,400 km—about 30 Earth diameters. Learners can use these ratios to revise their sketches or build a physical model.
+
+The Moon is placed on Earth's outward side for this activity. This is an illustrative alignment using its average distance from Earth, not its current orbital position.
+
 ## Optional mathematical extensions
 
 - Use the diameter values to calculate how many Earth diameters fit across Jupiter or the Sun. Distinguish a comparison of diameters from a comparison of volumes.
