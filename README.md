@@ -84,6 +84,10 @@ A scientific imagination experiment developed with **GPT-6 Astra**.
 
 Planet textures: **Solar System Scope**, CC BY 4.0. Mission imagery: **NASA/JPL/JHUAPL/SwRI**, with the individual credits preserved in the app and [third-party notices](THIRD_PARTY_NOTICES.md). Scientific references include NASA Science, JPL and the linked Planet Nine research. This is an independent project, not an endorsed NASA resource.
 
+## Support
+
+[Support my expensive LLM habit ☕](https://buymeacoffee.com/dougwhite)
+
 ## Note from Me
 
 Everything you see in this repo, all code and text... everything apart from this section here (and the third party image assets) was authored entirely by GPT-6 Astra as a test of it's capabilities and the ChatGPT desktop experience. It's really quite impressive how far the technology has come. Please feel free to use this resource however you see fit, simply keeping in mind the copyright/attribution requirements of the third party assets. 
