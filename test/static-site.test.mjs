@@ -6,7 +6,7 @@ test('static site assets work at both a domain root and a GitHub Pages project p
   const html=await readFile('dist/index.html','utf8');
   const app=await readFile('dist/app.js','utf8');
   const relativeAssets=[...html.matchAll(/(?:src|href)="(\.\/[^"#]+)"/g)].map(m=>m[1]);
-  assert.deepEqual(relativeAssets.sort(),['./app.js','./style.css']);
+  assert.deepEqual(relativeAssets.sort(),['./analytics.js','./app.js','./style.css']);
   assert.doesNotMatch(html,/(?:src|href)="\/(?!\/)/);
   assert.doesNotMatch(app,/["'`]\/assets\//);
   for(const base of ['https://example.org/','https://example.org/scale-of-the-solar-system/']){

@@ -13,7 +13,7 @@ Start with Earth about the size of a coin on your phone. Let it drift out of vie
 - Animated journeys with logarithmic travel timing and brief planetary flybys.
 - Pinch zoom and a “Fit object” control for the Sun and giant planets.
 - Planet facts, spacecraft imagery, the asteroid and Kuiper belts, Pluto, and a clearly hypothetical Planet X.
-- A quiet, minimalist interface. No audio, accounts, analytics, ads or third-party asset requests in the app.
+- A quiet, minimalist interface. No audio, accounts or ads. Images are bundled locally; the official hosted version uses Cloudflare Web Analytics (see below).
 
 Designed for phones, tablets and desktop browsers. The starting Earth is 88 CSS pixels across, roughly a ten-cent coin on an iPhone mini; physical size varies with the device and browser settings.
 
@@ -91,3 +91,9 @@ Planet textures: **Solar System Scope**, CC BY 4.0. Mission imagery: **NASA/JPL/
 ## Note from Me
 
 Everything you see in this repo, all code and text... everything apart from this section here (and the third party image assets) was authored entirely by GPT-6 Astra as a test of it's capabilities and the ChatGPT desktop experience. It's really quite impressive how far the technology has come. Please feel free to use this resource however you see fit, simply keeping in mind the copyright/attribution requirements of the third party assets. 
+
+## Analytics and privacy
+
+Only `https://dougwhite.github.io/scale-of-the-solar-system/` loads Cloudflare Web Analytics, for views, referrers and page-performance measurements. Cloudflare states that Web Analytics uses no cookies, localStorage, individual fingerprinting or cross-site tracking. The in-app information panel links to the [privacy disclosure](https://thingsdougmakes.au/privacy/).
+
+`dist/analytics.js` limits loading to the official HTTPS hostname and project path. Local servers, downloaded copies, forks, other GitHub Pages projects and itch.io uploads do not load the beacon. The token is a public analytics identifier, not an account credential. Blocking analytics does not affect the app.
